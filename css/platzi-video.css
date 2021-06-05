@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #AB88FF;
+  font-family: "Mulish", sans-serif;
+}
+
+.header {
+  background-color: #AB88FF;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header__menu {
+  margin-right: 30px;
+}
+.header__menu:hover ul, .header__menu ul:hover {
+  display: block;
+}
+.header__menu ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0 0 0 -14px;
+}
+.header__menu li {
+  margin: 10px 0;
+}
+.header__menu a {
+  color: #FFF;
+  text-decoration: none;
+}
+.header__menu a:hover {
+  text-decoration: underline;
+}
+
+.header__menu--profile {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.header__menu--profile img {
+  margin-right: 8px;
+  width: 40px;
+}
+.header__menu--profile p {
+  margin: 0;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=platzi-video.css.map */
