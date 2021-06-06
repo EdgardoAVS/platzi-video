@@ -1,0 +1,26 @@
+extend componentes/plantilla.pug
+block contenidos
+    section.main
+        h2.main__title ¿Qué quieres ver hoy?
+        input.input-search(type="text" placeholder="Buscar...")
+    h2.title Mi lista
+    section.carrousel 
+        .carrousel__container  
+            +carrousel-item('img1.jpg','play-icon.png','plus-icon.png','Titulo 1','2019 16+ 114 minutos')
+            +carrousel-item('img2.jpg','play-icon.png','plus-icon.png','Titulo 2','2019 16+ 114 minutos')
+            +carrousel-item('img3.jpg','play-icon.png','plus-icon.png','Titulo 3','2019 16+ 114 minutos')
+            +carrousel-item('img4.jpg','play-icon.png','plus-icon.png','Titulo 4','2019 16+ 114 minutos')
+            +carrousel-item('img5.jpg','play-icon.png','plus-icon.png','Titulo 5','2019 16+ 114 minutos')
+            +carrousel-item('img6.jpg','play-icon.png','plus-icon.png','Titulo 6','2019 16+ 114 minutos')
+            +carrousel-item('img7.jpg','play-icon.png','plus-icon.png','Titulo 7','2019 16+ 114 minutos')
+
+    h2.title Tendencias 
+    section.carrousel 
+        .carrousel__container  
+            +carrousel-item('img2.jpg','play-icon.png','plus-icon.png','Titulo 1','2019 16+ 114 minutos')
+            +carrousel-item('img1.jpg','play-icon.png','plus-icon.png','Titulo 2','2019 16+ 114 minutos')
+            +carrousel-item('img3.jpg','play-icon.png','plus-icon.png','Titulo 3','2019 16+ 114 minutos')
+            +carrousel-item('img4.jpg','play-icon.png','plus-icon.png','Titulo 4','2019 16+ 114 minutos')
+            +carrousel-item('img5.jpg','play-icon.png','plus-icon.png','Titulo 5','2019 16+ 114 minutos')
+            +carrousel-item('img6.jpg','play-icon.png','plus-icon.png','Titulo 6','2019 16+ 114 minutos')
+            +carrousel-item('img7.jpg','play-icon.png','plus-icon.png','Titulo 7','2019 16+ 114 minutos')

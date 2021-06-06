@@ -1,0 +1,21 @@
+.footer {
+    @include media(mobile-only){
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    background-color: #AB88FF;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    a {
+        color: $color-claro;
+        cursor: pointer;
+        font-size: 14px;
+        padding-left: 30px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

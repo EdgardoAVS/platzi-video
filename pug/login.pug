@@ -1,0 +1,31 @@
+doctype html 
+html
+    include componentes/head.pug
+    include componentes/mixins.pug
+    body
+        block contenidos
+            header.header-login
+                img(src="../imagenes/logo-platzi-video.png", alt="")
+            section.login   
+                section.login__container    
+                    h2 Inicia sesión 
+                    form.login__container--form
+                        input.input(type="text" placeholder="Correo")
+                        input.input(type="password" placeholder="Contraseña")
+                        button.button Iniciar sesión 
+                        .login__container--remember-me
+                            label
+                                input(type="checkbox" id="cbox1" value="checkbox")
+                                | Recúerdame 
+                            a(href="/") Olvidé mi contraseña
+                    section.login__container--social-media 
+                        div 
+                            img(src="/imagenes/google-icon.png", alt="") 
+                            |Inicia sesión con Google 
+                        div 
+                            img(src="/imagenes/twitter-icon.png", alt="") 
+                            |Inicia sesión con Twitter
+
+                    p.login__container--register No tienes nunguna cuenta 
+                        a(href="") Regístrate 
+    include componentes/footer.pug

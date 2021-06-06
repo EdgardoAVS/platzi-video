@@ -1,0 +1,9 @@
+mixin carrousel-item(imagen,icono1,icono2,titulo,subtitulo)
+    .carrousel-item    
+        img.carrousel-item__img(src="/imagenes/" +imagen)
+        .carrousel-item__details
+            div 
+                img(src="/imagenes/" +icono1)
+                img(src="/imagenes/" +icono2)
+            p.carrousel-item__details--title=titulo
+            p.carrousel-item__details--subtitle=subtitulo

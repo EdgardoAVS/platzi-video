@@ -1,0 +1,18 @@
+doctype html 
+html
+    include componentes/head.pug
+    include componentes/mixins.pug
+    body
+        block contenidos
+            header.header-login
+                img(src="../imagenes/logo-platzi-video.png", alt="")
+            section.registro   
+                section.registro__container    
+                    h2 Regístrate
+                    form.registro__container--form
+                        input.input(type="text" placeholder="Nombre")
+                        input.input(type="email" placeholder="Correo")
+                        input.input(type="password" placeholder="Contraseña")
+                        button.button Registrarme 
+                    a.iniciar-sesion(href="") Iniciar sesión 
+    include componentes/footer.pug

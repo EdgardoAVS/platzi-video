@@ -1,0 +1,45 @@
+.registro {
+    background: linear-gradient(#21C08B, #AB88FF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.registro__container {
+    @include media(mobile-only){
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid $color-claro;
+    border-radius: 40px;
+    color: $color-claro;
+    padding: 60px 68px 40px;
+    min-height: 600px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    &--form {
+        display: flex;
+        flex-direction: column;
+        label {
+            font-size: 14px;
+        }
+    }
+    a {
+        color: $color-claro;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
